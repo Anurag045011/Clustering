@@ -1,31 +1,45 @@
-# Clustering
 
-# Clustering Comparison
+# Vehicle Segmentation through K-Means Clustering
 
-This repository contains a Jupyter Notebook (045011_Clustering_Comparison.ipynb) and a CSV file (CAR DETAILS FROM CAR DEKHO.csv) for comparing two clustering methods: K-Means and Gaussian Mixture Model (GMM). The notebook provides detailed analysis and comparison of the clustering results obtained from these methods using a dataset of car details from Car Dekho.
+## Overview
+This repository contains the code and report for the project on Vehicle Segmentation through K-Means Clustering. The project aims to segment vehicle data using unsupervised machine learning clustering algorithms, specifically K-Means clustering. It includes data preprocessing, analysis, and interpretation of clustering results.
 
-# Contents
+## Project Objectives
+1. Segmentation of Vehicle Data using Unsupervised Machine Learning Clustering Algorithms
+2. Identification of Appropriate Number of Segments or Clusters
+3. Determination of Segment or Cluster Characteristics
 
-045011_Clustering_Comparison.ipynb: Jupyter Notebook containing the Python code for performing K-Means and GMM clustering on the car dataset, along with detailed analysis and comparison of the clustering results.
-CAR DETAILS FROM CAR DEKHO.csv: CSV file containing the car details dataset used for clustering analysis.
+## Description of Data
+- **Data Source**: [Car Dekho](https://www.cardekho.com/used-cars+in+delhi-ncr)
+- **Data Size**: 7.16 MB
+- **Data Shape**: 84,340 rows × 8 columns
+- **Variables**: 
+  - Categorical: Fuel, Seller Type, Transmission, Owner
+  - Non-Categorical: Selling Price, Kilometers Driven
 
-# Overview
+## Files
+- `045011_Kmeans_Clustering.ipynb`: Google Colab Notebook containing the code and report for the project.
+- `CAR DETAILS FROM CAR DEKHO.csv`: Dataset used for analysis.
 
-Clustering is a fundamental unsupervised learning technique used to group similar data points together. In this analysis, we explore the application of K-Means and GMM clustering algorithms to categorize cars based on their attributes such as selling price, kilometers driven, fuel type, etc. The notebook provides a step-by-step walkthrough of the clustering process, evaluation of clustering quality, and comparison of the two methods.
+## Requirements
 
-# Key Features
-Implementation of K-Means and GMM clustering algorithms.
+- `Python 3.x`
+- `Google Colab Notebook`
+- `Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn`
 
-Evaluation of clustering quality using silhouette score and Davies-Bouldin index.
+## Usage
+1. Clone the repository: `git clone https://github.com/Anurag045011/Clustering.git`
+2. Install the required dependencies: `Given at the starting of the Google Colab Notebook after Report`
+3. Open and run the Jupyter Notebook `045011_Kmeans_Clustering.ipynb` to explore the project code and analysis.
 
-Comparison of computational efficiency between K-Means and GMM.
+## Results
+- The optimal number of clusters (K) is determined using the Elbow method and silhouette score analysis.
+- Cluster characteristics and interpretations are provided based on centroid values and ANOVA results.
+- Chi-Square Test of Independence is performed to analyze associations between categorical variables and clusters.
 
-Interpretation of clustering results and insights for managerial implications in the automotive industry.
+## Conclusion
+The project provides insights into customer segmentation, marketing strategies, and inventory management for vehicle dealerships based on clustering analysis.
 
-Requirements
 
-Python 3.x
 
-Jupyter Notebook
 
-Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
